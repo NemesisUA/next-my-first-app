@@ -13,7 +13,7 @@ const getTickets = async () => {
 
 
 const TicketsList = async () => {
-  const tickets = await getTickets();
+  const data = await getTickets();
   const tickets = data.tickets;
   
   return (
