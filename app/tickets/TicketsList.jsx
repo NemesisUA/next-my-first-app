@@ -14,7 +14,8 @@ const getTickets = async () => {
 
 const TicketsList = async () => {
   const tickets = await getTickets();
-
+  const tickets = data.tickets;
+  
   return (
     <>
       {tickets.map((ticket) => (
