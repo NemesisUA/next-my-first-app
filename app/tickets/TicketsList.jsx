@@ -1,5 +1,6 @@
 const getTickets = async () => {
-  const res = await fetch('http://localhost:4000/tickets', {
+  // http://localhost:4000/tickets
+  const res = await fetch('https://nemesisua.github.io/api-tickets/tickets.json', { 
     next: {
       revalidate: 0 // when we set to 0, we opt out of using cache
     }
